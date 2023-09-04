@@ -1,7 +1,7 @@
 const boardImage = new Image();
 boardImage.src = 'assets/board.png';
-import type { Position } from './interfaces';
-import { c } from './app';
+import type { Position } from '../interfaces';
+import { c } from '../app';
 const crop = {
 	'╦': 0, //"3-way-down"
 	'╣': 32, //"3-way-left"
@@ -35,8 +35,6 @@ const crop = {
 	'▣': 928, //"single"
 	'═': 960, //"straight-horiz"
 	'║': 992, //"straight-vert"
-	'◦': 1024, //"white-dot-small"
-	'○': 1056, //"white-dot"
 };
 
 export class Boundary {
